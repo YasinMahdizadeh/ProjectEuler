@@ -10,9 +10,8 @@ def IsPalindrome( s ):
 
 for a in range( 999 , 900 , -1 ):
     for b in range( 999 , 900 , -1 ):
-        if ( a * b % 11 == 0):
-            print ( a * b , IsPalindrome(str(a*b)))
-            if(IsPalindrome(str(a*b))):
-                if( a*b > largest):
-                    largest = a*b
+        print ( a * b , IsPalindrome(str(a*b)))
+        if(IsPalindrome(str(a*b))):
+            if( a*b > largest):
+                largest = a*b
 print(largest)
